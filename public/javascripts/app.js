@@ -5,12 +5,12 @@ angular.module('birthdaytracker', [])
     $scope.birthdays = [];
 
     $scope.addBirthday = function() {
-      if($scope.formContent === '') {
+      if($scope.name === '' || $scope.date === '') {
         return;
       }
-      console.log('In add birthday');
       $scope.create({
-        date: $scope.formContent,
+        name: $scope.name
+        date: $scope.date,
       });
       $scope.formContent = '';
     }
