@@ -12,7 +12,8 @@ angular.module('birthdaytracker', [])
         name: $scope.name
         date: $scope.date,
       });
-      $scope.formContent = '';
+      $scope.name = '';
+      $scope.date = '';
     }
 
     $scope.getAll = function() {
