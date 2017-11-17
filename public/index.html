@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthday Tracker</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
+  </head>
+
+  <body ng-app="birthdaytracker" ng-controller="MainCtrl">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <form ng-submit="addBirthday()">
+          <input type="text" ng-model="name"></input>
+          <input type="date" ng-model="date"></input>
+          <button type="submit">Add Birthday</button>
+        </form>
+      </div>
+      {{birthdays}}
+    </div>
+  </body>
+</html>
