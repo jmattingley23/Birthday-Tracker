@@ -1,4 +1,4 @@
-angular.module('comment', [])
+angular.module('birthdaytracker', [])
 .controller('MainCtrl', [
   '$scope',
   function($scope){
