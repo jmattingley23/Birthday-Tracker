@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/commentDB',{useMongoClient:true});
+mongoose.connect('mongodb://localhost/birthdayDB',{useMongoClient:true});
 require('./models/Birthday');
 
 var routes = require('./routes/index');
