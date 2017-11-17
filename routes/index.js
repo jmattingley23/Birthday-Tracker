@@ -23,4 +23,9 @@ router.post('/birthdays', function(req, res, next) {
   })
 });
 
+router.get('/deleteall', function(req, res, next) {
+  Birthday.remove();
+  res.sendStatus(200);
+});
+
 module.exports = router;
