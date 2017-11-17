@@ -9,7 +9,7 @@
 body {
     color: lightgray;
     padding: 50px;
-    background-color: darkblue;
+    background-color: #1f3c5e;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     font-family: Interface;
 }
@@ -24,6 +24,7 @@ h1 {
 }
 
 input {
+    max-width: 100%;
     color: lightgray;
     border: none;
     border-bottom: solid 4px lightgray;
