@@ -1,8 +1,95 @@
+
+/* {
+    border: solid 1px red;
+}
+/*
+ */
+
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: lightgray;
+    padding: 50px;
+    background-color: darkblue;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: Interface;
 }
 
-a {
-  color: #00B7FF;
+h1 {
+    font-family: Interface;
+    text-align: center;
+    width: 60%;
+    border-bottom: solid 4px lightgray;
+    padding-bottom: 5px;
+    margin: 20px auto;
 }
+
+input {
+    color: lightgray;
+    border: none;
+    border-bottom: solid 4px lightgray;
+    background-color: rgba(0,0,0,0.0);
+    margin: 20px;
+}
+
+button {
+    color: lightgray;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 20px;
+}
+
+button:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+ul {
+    padding: 0px;
+}
+
+.main {
+    width: 60%;
+    min-width: 200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 50%;
+    min-width: 200px;
+}
+
+.right {
+    width: 50%;
+    min-width: 200px;
+}
+
+.birthday_form {
+    /* have buttons display on top of each other */
+}
+
+.birthday_container {
+    list-style-type: none;
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px;
+    border-radius: 2px;
+    margin: 10px;
+}
+
+.birthday_container:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.birthday {
+    text-decoration: underline;
+    margin-left: auto;
+}
+
