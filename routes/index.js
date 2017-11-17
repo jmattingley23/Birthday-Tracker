@@ -13,7 +13,6 @@ router.get('/birthdays', function(req, res, next) {
 })
 
 router.post('/birthdays', function(req, res, next) {
-  console.log('post birthday');
   var birthday = new Birthday(req.body);
   birthday.save(function(err, birthday) {
     if(err) {
@@ -24,7 +23,7 @@ router.post('/birthdays', function(req, res, next) {
 });
 
 router.get('/deleteall', function(req, res, next) {
-  Birthday.remove();
+  Birthday.find().remove(function() {});
   res.sendStatus(200);
 });
 

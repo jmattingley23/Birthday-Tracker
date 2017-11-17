@@ -5,7 +5,6 @@ angular.module('birthdaytracker', [])
     $scope.birthdays = [];
 
     $scope.addBirthday = function() {
-      console.log('add birthday');
       if($scope.name === '' || $scope.date === '') {
         return;
       }
@@ -18,7 +17,6 @@ angular.module('birthdaytracker', [])
     }
 
     $scope.create = function(birthday) {
-      console.log('create');
       return $http.post('/birthdays', birthday).success(function(data) {
         $scope.birthdays.push(data);
       });
