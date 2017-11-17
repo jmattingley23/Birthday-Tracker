@@ -10,7 +10,7 @@ angular.module('birthdaytracker', [])
         return;
       }
       $scope.create({
-        name: $scope.name
+        name: $scope.name,
         date: $scope.date,
       });
       $scope.name = '';
