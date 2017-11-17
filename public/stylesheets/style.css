@@ -90,6 +90,6 @@ ul {
 
 .birthday {
     text-decoration: underline;
-    margin-left: auto;
+    float: right;
 }
 
